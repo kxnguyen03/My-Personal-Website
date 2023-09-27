@@ -1,0 +1,126 @@
+/* overall styles */
+a:link{
+    color: blue;
+    text-decoration: none;
+}
+a:visited{
+    color:purple;
+    text-decoration: none;
+}
+a:hover{
+    background-color: yellow;
+    color:green;
+    text-decoration: underline;
+}
+a:active{
+    color: red;
+    text-decoration: underline;
+}
+body{
+    background-color: rgb(135, 206, 250, .7);
+}
+h1{
+    text-align: center;
+    font-size: 25px;
+}
+h6{
+    text-align: right;
+}
+h1, h3, h6{
+    border: 5px;
+    border-color: black;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    
+    width: 200px; 
+}
+h1, h2, h3, h4, h5, h6{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+@media screen and (max-width: 600px) {
+    img.nametag{
+        display: none;
+    }
+}
+@media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+        flex: 100%;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+}
+.flex-item-left {
+    background-color: #f48a8a;
+    padding: 10px;
+    flex: 50%;
+} 
+.flex-item-right {
+    background-color: rgb(28, 113, 85);
+    padding: 10px;
+    flex: 50%;
+}
+/* index.html styles */
+#lofigirl:hover{
+    height: 400px;
+    width: 500px;
+    position: relative;
+}
+#nametag{
+    animation: shake 0.5s;
+    animation-iteration-count:infinite;
+}
+#spotify{
+    border-radius:10px;
+    height: 90px;
+}
+
+/* myinterests.html styles */
+#moviesheader, #showsheader, #gamesheader{
+    border: 2px solid black;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    width: 200px;
+}
+#moviesheader:hover, #showsheader:hover, #gamesheader:hover{
+    background-color: lightyellow;
+}
+#movies, #shows, #games{
+    border: 2px solid black;
+    border-color: black;
+    border-radius: 20px;
+    border-style: groove;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 1px;
+    text-align:center;
+}
+#movies th, #shows th, #games th{
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 20px;
+    border-style: groove;
+    font-size: 18px;   
+}
+#movies td, #shows td, #games td{
+    border: 5px lightgrey;
+    border-color: darkgray;
+    border-radius: 20px;
+    border-style: groove;
+    border-width: 1px;  
+}
+#movies tr:hover, #shows tr:hover, #games tr:hover{
+    background-color: rgb(98, 189, 245); 
+}
+#interstellar:hover, #whiplash:hover, #atsv:hover, #arcane:hover, #teentitans:hover, 
+#cobrakai:hover, #persona5royal:hover, #arkhamknight:hover, #lifeisstrange:hover{
+    height: 800px;
+    width: 500px;
+}
